@@ -1,0 +1,253 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-titulo {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Topo */
+header {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo img {
+    width: 150px;
+}
+
+
+.topo a {
+    padding: 5px;
+    margin: 0 5px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Capa */
+.capa {
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%);
+    background-image: url('../public/assets/capa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-conteudo {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.capa-conteudo h1,
+.capa-conteudo p {
+    font-family: 'Anybody', cursive !important;
+    max-width: 500px;
+}
+
+.capa-conteudo p {
+    font-size: 36px;
+    color: rgb(196, 196, 196);
+}
+
+.capa-conteudo h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 70px;
+    letter-spacing: 5px;
+}
+
+/* Seção - Produtos */
+
+.produtos {
+    width: 100%;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.container-produtos {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-produto {
+    background-color: #f6f6f6;
+    width: calc(50% - 15px);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-titulo {
+    margin: 0;
+    font-size: 32px;
+}
+
+.card-imagem {
+    width: 80%;
+    height: 150px;
+    margin: 30px;
+}
+
+.card-texto {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.produtos-lista {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos-lista li {
+    text-align: start;
+    margin: 5px;
+}
+
+/* Seção - Sobre */
+.sobre {
+    background-color: #f8f7ff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.sobre-descricao {
+    line-height: 32px;
+}
+
+.container-sobre {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-sobre {
+    display: flex;
+    width: 100%;
+}
+
+.card-sobre img,
+.card-sobre div {
+    width: 50%;
+    height: 300px;
+    border: 1px solid #a2adad;
+    box-sizing: border-box;
+}
+
+.card-sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 25px;
+}
+
+.card-sobre-descricao h4 {
+    font-size: 36px;
+    font-family: 'Anybody', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 42px;
+}
+
+.card-sobre-descricao p {
+    font-size: 22px;
+    color: #4a4a4a;
+}
+
+/* Seção - Contato */
+.contato {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #05031b;
+}
+
+.listas-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15x;
+}
+
+.lista-contato li {
+    margin: 5px 0;
+    vertical-align: middle;
+}
+
+.lista-contato li img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.lista-contato a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff
+}
+
+.lista-contato caption {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    text-align: center;
+    color: #adadad;
+    background-color: #030303;
+    padding: 20px
+}
+
+footer p {
+    margin: 0;
+}

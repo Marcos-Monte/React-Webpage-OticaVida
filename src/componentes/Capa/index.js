@@ -2,10 +2,10 @@ import React from 'react';
 
 const Capa = () => {
     return (
-        <section>
-            <div>
+        <section className="capa">
+            <div className="container capa-conteudo">
                 <p>Preços baixos em</p>
-                <h2>Óculos de Grau e de Sol</h2>
+                <h1>Óculos de Grau e de Sol</h1>
                 <p>Você só encontra aqui</p>
             </div>
         </section>

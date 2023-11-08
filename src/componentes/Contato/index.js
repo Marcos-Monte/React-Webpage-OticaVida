@@ -2,13 +2,14 @@ import React from 'react';
 
 const Contato = () => {
     return (
-        <section>
+        <section className="contato">
+
             <div className="container">
-                <h2>FALE CONOSCO</h2>
+                <h2 className="container-titulo">FALE CONOSCO</h2>
                 <p>Não perca tempo, venha conhecer uma de nossas lojas ou entre em contato através de nossas redes sociais ou da central de atendimento.</p>
 
                 <div className="listas-contato">
-                    <ul className="lista-contato">
+                    <ul className="lista-contato" type="none">
                         <caption>Contato</caption>
                         <li>
                             <a href="https://maps.app.goo.gl/5aWau3PyojsehJVCA">
@@ -30,7 +31,7 @@ const Contato = () => {
                         </li>
                     </ul>.
 
-                    <ul className="lista-contato">
+                    <ul className="lista-contato" type="none">
                         <caption>Nossas Redes Sociais</caption>
                         <li>
                             <a href="https://www.facebook.com/">
