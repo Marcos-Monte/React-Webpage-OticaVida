@@ -6,9 +6,9 @@ export default function Header() {
             <div className="container topo">
                 <img src="assets/logo.png"></img>
                 <nav>
-                    <a href="#">PRODUTOS</a>
-                    <a href="#">SOBRE</a>
-                    <a href="#">CONTATO</a>
+                    <a href="#produtos">PRODUTOS</a>
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#contato">CONTATO</a>
                 </nav>
             </div>
         </header>

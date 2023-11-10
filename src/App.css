@@ -1,5 +1,6 @@
 /* Estilos Globais */
 body {
+    min-width: 280px;
     margin: 0;
     padding: 0;
 }
@@ -103,6 +104,7 @@ header {
 .card-produto {
     background-color: #f6f6f6;
     width: calc(50% - 15px);
+    /* min-width: 450px; */
     box-sizing: border-box;
     padding: 20px 10px;
     margin-bottom: 20px;
@@ -230,7 +232,10 @@ header {
 .lista-contato a {
     font-size: 14px;
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
 }
 
 .lista-contato caption {
@@ -250,4 +255,150 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Querie */
+@media (max-width: 768px) {
+
+    /* Capa */
+    .capa-conteudo h1 {
+        font-size: 40px;
+        max-width: 350px;
+    }
+
+    .capa-conteudo p {
+        font-size: 20px;
+    }
+
+    /* Produtos */
+    .produtos,
+    .sobre,
+    .contato {
+        padding: 60px 20px;
+    }
+
+    .card-titulo,
+    .card-sobre-descricao h4 {
+        font-size: 22px
+    }
+
+    .card-imagem {
+        max-height: 100px;
+    }
+
+    .card-texto,
+    .card-sobre-descricao p {
+        font-size: 16px;
+    }
+
+    /* Sobre */
+    .card-sobre {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* Header */
+    .topo {
+        flex-direction: column;
+    }
+
+    .topo nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #aaadaf;
+    }
+
+    .topo a {
+        font-size: 14px;
+    }
+
+    /* Capa */
+    .capa {
+        background-position-x: 75%;
+        background-position-y: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .capa::before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        opacity: .6;
+        position: absolute;
+        /* background-color: rgba(0, 0, 0, 0.6, ); */
+        background-color: black;
+    }
+
+    .capa-conteudo {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .capa-conteudo h1 {
+        font-size: 28px;
+        max-width: 280px;
+    }
+
+    .capa-conteudo p {
+        font-size: 18px;
+    }
+
+    /* Produtos */
+    .produtos,
+    .sobre,
+    .contato {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-produto {
+        width: 100%;
+    }
+
+    .produtos-lista {
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .produtos-lista p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sobre */
+    .card-sobre {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card-sobre img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card-sobre-descricao {
+        width: 100% !important;
+        height: 300px;
+    }
+
+    /* Contato */
+    .listas-contato {
+        flex-direction: column;
+    }
+
+    .lista-contato {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .lista-contato li {
+        width: 200px;
+        text-align: start;
+    }
 }

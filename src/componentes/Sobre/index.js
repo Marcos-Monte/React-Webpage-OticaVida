@@ -2,7 +2,8 @@ import React from 'react';
 
 const Sobre = () => {
     return (
-        <section className="sobre">
+        <section className="sobre" id="sobre">
+
             <div className="container">
                 <h2 className="container-titulo" >QUEM SOMOS NÓS?</h2>
                 <p className="sobre-descricao">Fundada em 2001, em Nova Iguaçú - Rio de janeiro, à Óticas Vida iniciou suas atividades focada no atendimento ao público de renda mais baixa, sempre com o objetivo de proporcionar ao cliente bom atendimento, qualidade e preço baixo.</p>

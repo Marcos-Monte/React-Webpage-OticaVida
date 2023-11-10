@@ -2,7 +2,7 @@ import React from 'react';
 
 const Produtos = () => {
     return (
-        <section className="produtos">
+        <section className="produtos" id="produtos">
 
             <div className="container">
                 <h2 className="container-titulo">Nossos Produtos</h2>
